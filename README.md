@@ -1,4 +1,4 @@
-# Control4 API bridge python
+# Control4 python API bridge
 
 I recently started using control4. I needed a way to control my home via REST and wanted something that was easy. There is nothing easy. 
 
