@@ -90,17 +90,23 @@ class HTTPBridge:
     return self.event_trigger(event)
 
   def set_room_volume(self, room_id, volume):
-    return self.room_control(42, "SET_VOLUME_LEVEL", {"LEVEL":volume})
+    return self.room_control(room_id, "SET_VOLUME_LEVEL", {"LEVEL":volume})
+
+  def mute_room(self, room_id):
+    return self.room_control(room_id, "MUTE_ON")
+
+  def unmute_room(self, room_id):
+    return self.room_control(room_id, "MUTE_OFF")
 
   def get_room_volume(self, room_id):
-    event_id = 1011
+    event_id = 1011 #volume 
     result = self.room_variable(room_id,"1011")
     result["VOLUME"] = result["VARIABLE_1011"]
     del result["VARIABLE_1011"]
     return result
 
   def get_room_mediainfo(self, room_id):
-    event_id = "1031"
+    event_id = "1031" #media info
     result = self.room_variable(room_id,event_id)
     result["MEDIAINFO"] = result["VARIABLE_"+event_id]
     del result["VARIABLE_"+event_id]
