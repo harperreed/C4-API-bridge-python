@@ -6,7 +6,7 @@ However, Houselogix makes a [http web api bridge for control4](https://www.house
 
 For instance, you can not easily turn off the lights in a specific room. I am doing a lot of debugging and testing and will be updating this class with helper methods as I figure out various things. 
 
-Right now, you can easily change the volume for a specific room, mute and unmute a room, and get room variables. If you know the various "commands" and "variables" inside of control4 - then you can probably get further. But since I am not a *dealer* and don't have access to all of the *insider info* I am **SOL**.
+Right now, you can easily change the volume for a specific room, mute and unmute a room, and get room variables. If you know the various "commands" and "variables" inside of control4 - then you can probably get further. But since I am not a *dealer* and don't have access to all of the *insider info,* I am **SOL**.
 
 I will be updating this as I make progress and will be posting more info that should help others do fun projects.
 
